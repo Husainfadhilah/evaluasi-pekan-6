@@ -138,3 +138,32 @@ console.log("----------------------------------");
 console.log("MENU DENGAN STOK MENIPIS");
 console.log(laporan.menuStokMenipis);
 
+
+// console.log("----------------------------------");
+// console.log("DEMO ARRAY METHOD");
+
+// console.log(
+//   "Apakah TRX-001 lunas?",
+//   laporan.kodeLunas.includes("TRX-001")
+// );
+
+// console.log(
+//   "Posisi TRX-001:",
+//   laporan.kodeLunas.indexOf("TRX-001")
+// );
+
+// console.log(
+//   "Dua kode pertama:",
+//   laporan.kodeLunas.slice(0, 2)
+// );
+
+
+// let salinanKode = laporan.kodeLunas.slice();
+
+// console.log("Sebelum splice:", salinanKode);
+
+// salinanKode.splice(0, 1);
+
+// console.log("Setelah splice:", salinanKode);
+// console.log("Kode asli tetap:", laporan.kodeLunas);
+
