@@ -143,4 +143,44 @@ console.log(cekBilanganPrima(2));
 console.log(cekBilanganPrima(17));
 console.log(cekBilanganPrima(15)); 
 console.log(cekBilanganPrima(1));  
-console.log(cekBilanganPrima(0));  
+console.log(cekBilanganPrima(0)); 
+
+//JAWABAN KOMENTAR
+
+/*
+1. Saya memilih function hitungFaktorial(5).
+   Awalnya, hasil = 1.
+   Putaran 1: i = 1, hasil = 1 * 1 = 1.
+   Putaran 2: i = 2, hasil = 1 * 2 = 2.
+   Putaran 3: i = 3, hasil = 2 * 3 = 6.
+   Putaran 4: i = 4, hasil = 6 * 4 = 24.
+   Putaran 5: i = 5, hasil = 24 * 5 = 120.
+   Perulangan selesai dan function mengembalikan 120.
+
+2. Array asli tidak berubah karena hapusDuplikat membuat
+   array baru bernama hasil untuk menyimpan elemen unik.
+   Saya menggunakan includes untuk memeriksa apakah elemen
+   sudah ada di hasil. Jika belum ada, elemen ditambahkan
+   menggunakan push.
+
+3. Saya tidak menggunakan break pada cekBilanganPrima.
+   Jika sebuah angka habis dibagi angka lain, function
+   langsung mengembalikan false menggunakan return.
+   Return menghentikan function, jadi break tidak diperlukan.
+   Jika return diganti dengan cara yang hanya melewati
+   pemeriksaan saat itu, hasilnya bisa salah jika tidak
+   ada penanda bahwa angka tersebut bukan prima.
+
+4. cariTerbesar([]) mengembalikan null karena array kosong
+   tidak memiliki angka terbesar. Nilai 0 bisa membuat
+   seolah-olah angka terbesar yang ditemukan adalah 0,
+   padahal tidak ada angka di dalam array.
+
+5. hitungFaktorial menggunakan for karena jumlah putaran
+   diketahui dari nilai n, yaitu dari 1 sampai n.
+   cekPalindrom juga menggunakan for untuk membaca karakter
+   dari indeks terakhir sampai indeks pertama.
+   Perulangan for cocok karena saya perlu mengatur indeks
+   dan urutan pemeriksaan karakter secara langsung.
+*/
+
