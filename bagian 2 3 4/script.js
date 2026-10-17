@@ -84,3 +84,57 @@ for (let item of kasir.menu) {
     laporan.menuStokMenipis.push(item.nama);
   }
 }
+
+//Mencetak laporan harian
+
+
+console.log(kedai.nama.toUpperCase());
+console.log("LAPORAN HARIAN KEDAI SENJA");
+
+
+console.log(`Jumlah Transaksi : ${laporan.jumlahTransaksi}`);
+console.log(`Transaksi Lunas  : ${laporan.jumlahLunas}`);
+console.log(`Transaksi Kurang : ${laporan.jumlahKurang}`);
+console.log(`Transaksi Ditolak: ${laporan.jumlahDitolak}`);
+console.log(`Pendapatan       : ${formatRupiah(laporan.pendapatan)}`);
+console.log(`Rata-rata        : ${formatRupiah(laporan.rataRata)}`);
+
+console.log("----------------------------------");
+console.log("TRANSAKSI LUNAS TERBESAR");
+
+if (laporan.transaksiTerbesar !== null) {
+  console.log(`Kode      : ${laporan.transaksiTerbesar.kode}`);
+  console.log(`Pelanggan : ${laporan.transaksiTerbesar.pelanggan}`);
+  console.log(`Total     : ${formatRupiah(laporan.transaksiTerbesar.total)}`);
+}
+
+console.log("----------------------------------");
+console.log("PENJUALAN PER MENU");
+
+for (let namaMenu in laporan.penjualanPerMenu) {
+  console.log(`${namaMenu}: ${laporan.penjualanPerMenu[namaMenu]}`);
+}
+
+console.log("Nama Menu:", Object.keys(laporan.penjualanPerMenu));
+console.log("Jumlah Terjual:", Object.values(laporan.penjualanPerMenu));
+
+console.log(`Menu Terlaris: ${laporan.menuTerlaris}`);
+
+console.log("----------------------------------");
+console.log("DAFTAR TRANSAKSI DITOLAK");
+console.log(laporan.daftarDitolak);
+
+console.log("----------------------------------");
+console.log("KODE TRANSAKSI LUNAS");
+console.log(laporan.kodeLunas);
+console.log(`Ringkasan Kode: ${laporan.ringkasanKode}`);
+
+console.log(
+  "Pengecekan kode:",
+  laporan.ringkasanKode.split(", ").length === laporan.jumlahLunas
+);
+
+console.log("----------------------------------");
+console.log("MENU DENGAN STOK MENIPIS");
+console.log(laporan.menuStokMenipis);
+
