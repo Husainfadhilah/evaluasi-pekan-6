@@ -182,3 +182,9 @@ CATATAN BUG
     salah satu perhitungan awal salah, hasil akhirnya
     juga tidak sesuai.
 */
+
+
+//JAWABAN DI KOMENTAR
+// 1. if (uangBayar = total) tidak error karena tanda = digunakan untuk memberikan nilai, bukan membandingkan nilai. Setelah dijalankan, nilai uangBayar berubah menjadi nilai total, yaitu 46620. Karena 46620 bukan 0, kondisi dianggap true.
+
+// 2. parseInt("100.000") menghasilkan 100 karena parseInt berhenti membaca saat menemukan titik. Agar hasilnya 100000, titik harus dihapus terlebih dahulu.
