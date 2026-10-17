@@ -25,3 +25,56 @@ console.log(kedai);
 for (const kunci in kedai) {
   console.log(`${kunci}: ${typeof kedai[kunci]}`);
 }
+
+//N0. 2
+
+const menu = [
+  {
+    nama: "Kopi Susu",
+    kategori: "Minuman",
+    harga: 15000,
+    stok: 10
+  },
+  {
+    nama: "Kopi Hitam",
+    kategori: "Minuman",
+    harga: 10000,
+    stok: 8
+  },
+  {
+    nama: "Teh Manis",
+    kategori: "Minuman",
+    harga: 5000,
+    stok: 12
+  },
+  {
+    nama: "Roti Bakar",
+    kategori: "Makanan",
+    harga: 12000,
+    stok: 5
+  },
+  {
+    nama: "Kentang Goreng",
+    kategori: "Camilan",
+    harga: 10000,
+    stok: 7
+  },
+  {
+    nama: "Nasi Goreng",
+    kategori: "Makanan",
+    harga: 18000,
+    stok: 4
+  },
+  {
+    nama: "Pisang Goreng",
+    kategori: "Camilan",
+    harga: 8000,
+    stok: 0
+  },
+  {
+    nama: "Mie Goreng",
+    kategori: "Makanan",
+    harga: 15000,
+    stok: 6
+  }
+];
