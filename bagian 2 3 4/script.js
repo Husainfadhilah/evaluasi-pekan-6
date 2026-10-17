@@ -78,3 +78,73 @@ const menu = [
     stok: 6
   }
 ];
+
+console.log(menu);
+
+//NO.3
+
+const transaksiMentah = [
+  {
+    kode: "trx-001",
+    pelanggan: " rina WULANDARI ",
+    hari: "sabtu",
+    uangBayar: "150.000",
+    voucher: " diskon10 ",
+    pesanan: [
+      { menu: " kopi SUSU", jumlah: "2" },
+      { menu: " Roti Bakar ", jumlah: "1" }
+    ]
+  },
+  {
+    kode: "TRX-002",
+    pelanggan: " budi santoso ",
+    hari: "jumat",
+    uangBayar: "75000",
+    voucher: " ",
+    pesanan: [
+      { menu: "Kopi Hitam", jumlah: "2" },
+      { menu: "Kentang Goreng", jumlah: "1" }
+    ]
+  },
+  {
+    kode: "trx-003",
+    pelanggan: "SITI AMALIA",
+    hari: "senin",
+    uangBayar: "10000",
+    voucher: "diskon10",
+    pesanan: [
+      { menu: "Nasi Goreng", jumlah: "2" }
+    ]
+  },
+  {
+    kode: "trx-004",
+    pelanggan: "   ",
+    hari: "minggu",
+    uangBayar: "50000",
+    voucher: "",
+    pesanan: [
+      { menu: "Kopi Susu", jumlah: "1" }
+    ]
+  },
+  {
+    kode: "trx-005",
+    pelanggan: "andi pratama",
+    hari: "rabu",
+    uangBayar: "50000",
+    voucher: " hemat ",
+    pesanan: []
+  },
+  {
+    kode: "trx-006",
+    pelanggan: " dewi LESTARI ",
+    hari: "selasa",
+    uangBayar: "100000",
+    voucher: " diskon10 ",
+    pesanan: [
+      { menu: "Menu Tidak Ada", jumlah: "2" },
+      { menu: "Mie Goreng", jumlah: "0" }
+    ]
+  }
+];
+
+console.log(transaksiMentah);
