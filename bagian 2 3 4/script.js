@@ -265,3 +265,18 @@ const kasir = {
     console.log("============================");
   }
 };
+
+//MENJALANKAN TRANSAKSI
+
+const TARGET_KAS = 1000000000;
+
+for (let trx of transaksiBersih) {
+  let hasil = kasir.prosesTransaksi(trx);
+
+  kasir.cetakStruk(hasil);
+
+  if (kasir.saldoKas >= TARGET_KAS) {
+    console.log("Target kas tercapai");
+    break;
+  }
+}
