@@ -280,3 +280,41 @@ for (let trx of transaksiBersih) {
     break;
   }
 }
+
+//JAWABAN SAYA
+
+/*
+1. Saya menggunakan this.menu karena menu tersebut
+   adalah milik object kasir. this merujuk pada object
+   yang sedang menjalankan method, yaitu kasir.
+
+2. switch cocok untuk memeriksa beberapa pilihan hari.
+   Saya tidak menulis break antara case sabtu dan minggu
+   agar keduanya mendapatkan potongan 5000.
+   Case lainnya memakai break atau return agar tidak
+   melanjutkan ke case berikutnya.
+
+3. !trx.pesanan.length digunakan untuk memeriksa apakah
+   jumlah pesanan adalah 0. Karena 0 termasuk Falsy,
+   tanda ! akan menghasilkan true.
+   Tiga nilai Falsy adalah 0, "", dan null.
+
+4. break digunakan untuk menghentikan perulangan,
+   contohnya ketika target kas sudah tercapai.
+   continue digunakan untuk melewati item yang tidak valid
+   dan melanjutkan ke item berikutnya.
+   Jadi, break menghentikan perulangan, sedangkan
+   continue hanya melewati satu putaran.
+
+5. hitungSubtotal mengembalikan object berisi subtotal,
+   itemValid, dan itemTidakValid agar program bisa
+   mengetahui total harga, item yang berhasil diproses,
+   dan item yang dilewati beserta alasannya.
+
+6. for...of digunakan untuk membaca setiap pecahan uang,
+   sedangkan while digunakan untuk menghitung berapa
+   lembar pecahan yang diperlukan.
+   Bisa juga menggunakan % dan / untuk menghitung sisa
+   dan jumlah lembar, tetapi cara while lebih mudah
+   dipahami untuk latihan perulangan.
+*/
