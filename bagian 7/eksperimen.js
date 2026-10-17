@@ -216,3 +216,25 @@ if ([]) {
 if ({}) {
   console.log("Object kosong masuk");
 }
+
+//NO.3
+// 1. "10" + 5 * 2 menghasilkan "1010" karena perkalian dikerjakan terlebih dahulu.
+// 5 * 2 menghasilkan 10, lalu "10" + 10 menghasilkan "1010" karena angka 10 digabungkan dengan teks "10".
+
+// 2. potongan dan hapus memiliki isi yang sama, yaitu [20, 30].
+// slice hanya mengambil data tanpa mengubah array asli, sedangkan splice mengambil sekaligus menghapus data dari array asli.
+
+// 3. console.log(cetak(4)) mencetak dua baris karena fungsi cetak memiliki console.log(n * 2) yang menampilkan 8.
+// Setelah itu, console.log di luar fungsi menampilkan undefined karena fungsi cetak tidak memiliki return untuk mengembalikan nilai.
+
+// 4. hasil bernilai "134" karena:
+// i = 1, angka 1 ditambahkan ke hasil sehingga hasil menjadi "1".
+// i = 2, continue melewati penambahan angka 2.
+// i = 3, angka 3 ditambahkan sehingga hasil menjadi "13".
+// i = 4, angka 4 ditambahkan sehingga hasil menjadi "134".
+// i = 5, break menghentikan perulangan sebelum angka 5 ditambahkan.
+
+// 5. do...while menjalankan blok terlebih dahulu, baru memeriksa kondisi.
+// x awalnya 0, lalu ditambah 5 sehingga menjadi 5.
+// Setelah itu, kondisi x < 3 diperiksa dan bernilai false, sehingga perulangan berhenti.
+// Karena itu, blok tetap berjalan satu kali dan hasilnya adalah 5.
